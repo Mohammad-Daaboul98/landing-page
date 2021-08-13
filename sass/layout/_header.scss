@@ -1,0 +1,75 @@
+.header{
+    position: relative;
+    width: 100%;
+    padding: 4rem 0;
+    background-color:$White;
+    z-index: 999;
+
+    &__logo-box{
+        @include Left;
+        display: inline-block;
+    }
+
+    // &__logo{
+
+    // }
+
+    &__nav{
+        @include center;
+        display: inline-block;
+        
+
+        &__list{
+            list-style: none;
+            font-weight: 300;
+            font-size: 1.6rem;
+        }
+
+        &__item{
+            display: inline-block;
+            &:not(:last-child){
+                margin-right: 2rem;
+            }
+        }
+
+        &__link{
+            &:visited,
+            &:link{
+                color: $Grayish-Blue;
+                text-decoration: none;
+                width: 0;
+                transition: all .5s;
+            }
+
+            &::after{
+                
+                content:"";
+                width: 0;
+                position: absolute;
+                top: 4.5rem;
+                left: 50%; 
+                transform: translate(-50%, 0); 
+                border-radius:10rem;
+                background:linear-gradient(to right, $Lime-Green, $Bright-Cyan);
+                transition: width .5s;
+            }
+
+            &:hover{
+                position: relative;
+                color:  $Dark-Blue;
+            }
+
+            &:hover::after{  
+                padding-bottom: .45rem;  
+                width: 100%;
+            }
+
+        }
+    }
+
+    &__button{
+        @include Right;
+        font-size:1.6rem;
+    }
+
+}

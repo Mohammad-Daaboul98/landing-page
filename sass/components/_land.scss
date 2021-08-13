@@ -1,0 +1,39 @@
+.land{
+    display: table;
+    position: relative;
+    overflow: hidden;
+
+        &__leftt{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            display: table-cell;
+        }
+
+        &__right{
+            width: 50%;
+            display: table-cell;
+            position:absolute;
+            top: -30rem;
+            right: -25.9rem;
+        }
+
+        &__bg{
+            position: relative;
+            margin: 0;
+            background-image: url('../img/bg-intro-desktop.svg');
+            height: 79.4rem;
+            width: 70rem;
+            z-index: 2;
+        }
+
+        &__img{
+            position: absolute;
+            top:23rem;
+            right: -9rem;
+            max-height: 100%;
+            max-width: 80%;
+
+        }
+}

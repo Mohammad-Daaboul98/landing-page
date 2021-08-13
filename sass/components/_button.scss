@@ -1,0 +1,23 @@
+.btn{
+    &:visited,
+    &:link{
+        position: relative;
+        padding: 1.5rem 3.5rem;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 10rem;
+    }
+
+    &--primary{
+        font-size:1.6rem;
+        font-weight: 300;
+        color:$White;
+        background-image: linear-gradient(to right, $Lime-Green, $Bright-Cyan);
+        transition: all .3s;
+
+        &:hover{
+           opacity: .7;
+        //    box-shadow: 0 0.2rem 1rem rgba(black , 1)  ;
+        }
+    }
+}
