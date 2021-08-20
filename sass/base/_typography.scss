@@ -5,13 +5,25 @@ body{
 .heading-primary{
     font-size: 5rem;
     font-weight: 300;
-    color:  $Dark-Blue;
+    color: $Dark-Blue;
     width: 75%;
     display: inline-block;
 }
 
+.heading-secondary{
+    font-size: 4rem;
+    font-weight: 300;
+    color: $Dark-Blue;
+}
+
+.heading-tertiary{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color:$Dark-Blue;
+}
+
 .paragraph{
-    // width: 40%;
+    line-height: 2.5rem;
     width: 75%;
     font-size:1.6rem ;
     font-weight: 300;

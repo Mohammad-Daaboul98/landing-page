@@ -1,0 +1,60 @@
+.footer{
+    position: relative;
+    background-color:$Dark-Blue;
+    width: 100%;
+    padding-bottom: 5rem;
+
+
+    &__logo{
+        text-align: center;
+        margin-top: 5rem ;
+        margin-bottom: 7rem;
+    }
+
+    &__icon-box{
+        text-align: center;
+    }
+
+    &__icon  {
+      
+        &:not(:last-child){
+            margin-right: .9rem;
+        }
+    }
+
+    &__list{
+            margin-top: 5rem;
+            list-style: none;
+            // margin-right: 20rem !important;
+    }
+
+    &__item{
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__link{
+        &:visited,
+        &:link{
+            text-decoration: none;
+            color: $Very-Light-Gray;
+            font-size: 1.7rem;
+            font-weight: 300;
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__button{
+        text-align: right;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    &__text{
+        color:$Grayish-Blue;
+        float: right;
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+}

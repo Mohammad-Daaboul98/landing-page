@@ -3,20 +3,20 @@
     width: 100%;
     padding: 4rem 0;
     background-color:$White;
-    z-index: 999;
+    z-index: 100;
+
+
 
     &__logo-box{
         @include Left;
         display: inline-block;
     }
 
-    // &__logo{
-
-    // }
 
     &__nav{
         @include center;
         display: inline-block;
+        @include respond(tab-port){display: none;}
         
 
         &__list{
@@ -70,6 +70,10 @@
     &__button{
         @include Right;
         font-size:1.6rem;
+        @include respond(tab-port){display: none;}
+
     }
+
+    &__checkbox{display: none;}
 
 }

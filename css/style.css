@@ -1,17 +1,8 @@
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateY(-10rem); }
-  80% {
-    transform: translateY(1rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
 *,
 *::after,
 *::before {
   margin: 0;
+  padding: 0;
   box-sizing: inherit; }
 
 html {
@@ -39,7 +30,18 @@ body {
   width: 75%;
   display: inline-block; }
 
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #2d314d; }
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #2d314d; }
+
 .paragraph {
+  line-height: 2.5rem;
   width: 75%;
   font-size: 1.6rem;
   font-weight: 300;
@@ -60,6 +62,9 @@ body {
 .u-margin-left-medium {
   margin-left: 8rem; }
 
+.u-margin-left-big {
+  margin-left: 18rem; }
+
 .u-padding-top-and-left-medium {
   padding-top: 10rem;
   padding-left: 15rem; }
@@ -75,7 +80,7 @@ body {
     top: -28rem;
     right: -3rem;
     background-image: url("../img/bg-intro-desktop.svg");
-    height: 79.4rem;
+    height: 100vh;
     width: 70rem;
     z-index: 10; }
   .section-home__img {
@@ -87,12 +92,21 @@ body {
 
 .section-about {
   position: relative;
-  top: -27.95rem;
-  left: 0;
+  top: -27.7rem;
+  margin-bottom: -27.7rem;
   width: 100%;
-  height: 50rem;
+  padding: 10rem 18rem 20rem 18rem;
   background-color: #f3f4f6;
   z-index: 3; }
+  .section-about__paragraph {
+    width: 42%; }
+
+.section-articall {
+  margin: 0 auto;
+  position: relative;
+  background-color: #fafafa;
+  width: 100%;
+  padding: 10rem 18rem 20rem 18rem; }
 
 .row {
   max-width: 144rem;
@@ -143,7 +157,7 @@ body {
   width: 100%;
   padding: 4rem 0;
   background-color: white;
-  z-index: 999; }
+  z-index: 100; }
   .header__logo-box {
     position: absolute;
     top: 50%;
@@ -156,6 +170,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .header__nav {
+        display: none; } }
     .header__nav__list {
       list-style: none;
       font-weight: 300;
@@ -191,6 +208,45 @@ body {
     right: 10%;
     transform: translateY(-50%);
     font-size: 1.6rem; }
+    @media (max-width: 56.25em) {
+      .header__button {
+        display: none; } }
+  .header__checkbox {
+    display: none; }
+
+.footer {
+  position: relative;
+  background-color: #2d314d;
+  width: 100%;
+  padding-bottom: 5rem; }
+  .footer__logo {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 7rem; }
+  .footer__icon-box {
+    text-align: center; }
+  .footer__icon:not(:last-child) {
+    margin-right: .9rem; }
+  .footer__list {
+    margin-top: 5rem;
+    list-style: none; }
+  .footer__item:not(:last-child) {
+    margin-bottom: 2rem; }
+  .footer__link:visited, .footer__link:link {
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin-bottom: 5rem; }
+  .footer__button {
+    text-align: right;
+    margin-top: 5rem;
+    margin-bottom: 3rem; }
+  .footer__text {
+    color: #9698a6;
+    float: right;
+    font-size: 1.8rem;
+    font-weight: 300; }
 
 .btn:visited, .btn:link {
   position: relative;
@@ -207,3 +263,68 @@ body {
   transition: all .3s; }
   .btn--primary:hover {
     opacity: .7; }
+
+.about-box {
+  text-align: center; }
+  .about-box__heading {
+    text-align: left;
+    margin-bottom: 1.5rem; }
+  .about-box__text {
+    text-align: left;
+    color: #9698a6;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem; }
+  .about-box__icon {
+    position: relative;
+    top: 0;
+    left: -9rem;
+    margin-bottom: 3rem; }
+
+.card {
+  background-color: white;
+  height: 40rem;
+  width: 115%;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
+  transition: all .3s; }
+  .card:not(:last-child) {
+    margin-right: 10rem; }
+  .card__picture {
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    margin-bottom: 2rem; }
+    .card__picture--1 {
+      background-image: url("../img/image-currency.jpg"); }
+    .card__picture--2 {
+      background-image: url("../img/image-restaurant.jpg"); }
+    .card__picture--3 {
+      background-image: url("../img/image-plane.jpg"); }
+    .card__picture--4 {
+      background-image: url("../img/image-confetti.jpg"); }
+  .card__heading {
+    color: #9698a6;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    font-size: .7rem;
+    font-weight: 300; }
+  .card__details {
+    margin-left: 2rem;
+    width: 70%;
+    color: #9698a6;
+    font-size: 1.3rem;
+    font-weight: 400; }
+  .card__link:visited, .card__link:link {
+    color: #2d314d;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: block;
+    cursor: pointer;
+    text-decoration: none; }
+  .card__link:hover {
+    color: #31d35c; }
+  .card:hover {
+    transform: scale(1.05); }

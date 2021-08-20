@@ -1,0 +1,72 @@
+.card{
+    background-color:$White;
+    height: 40rem;
+    width: 115%;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow:  0 1.5rem 2rem rgba(black, 0.1);
+    transition: all .3s;
+    
+    &:not(:last-child){
+        margin-right:10rem ;
+    }
+
+    &__picture{
+        width: 100%;
+        height: 50%;
+        background-size: cover;
+        margin-bottom: 2rem;
+        &--1{
+            background-image: url('../img/image-currency.jpg');
+        }
+
+        &--2{
+            background-image: url('../img/image-restaurant.jpg');
+        }
+
+        &--3{
+            background-image: url('../img/image-plane.jpg');
+        }
+
+        &--4{
+            background-image: url('../img/image-confetti.jpg');
+        }
+    }
+
+    &__heading{ 
+        color:$Grayish-Blue;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        font-size: .7rem;
+        font-weight: 300;
+    }
+
+    &__details{
+        margin-left: 2rem;
+        width: 70%;
+        color:$Grayish-Blue;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    &__link{
+        &:visited,
+        &:link{
+            color: $Dark-Blue;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display:block;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+            &:hover{
+                color: $Lime-Green;
+            }
+    }
+
+    &:hover{
+        transform:scale(1.05) ;
+    }
+}
