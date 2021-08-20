@@ -237,7 +237,10 @@ body {
     color: #fafafa;
     font-size: 1.7rem;
     font-weight: 300;
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    transition: color .3s; }
+  .footer__link:hover {
+    color: #31d35c; }
   .footer__button {
     text-align: right;
     margin-top: 5rem;
@@ -323,7 +326,8 @@ body {
     margin-bottom: 1rem;
     display: block;
     cursor: pointer;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: color .3s; }
   .card__link:hover {
     color: #31d35c; }
   .card:hover {

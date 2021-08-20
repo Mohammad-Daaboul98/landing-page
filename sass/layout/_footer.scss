@@ -42,6 +42,11 @@
             font-size: 1.7rem;
             font-weight: 300;
             margin-bottom: 5rem;
+            transition: color .3s;
+        }
+
+        &:hover{
+            color:$Lime-Green;
         }
     }
 
