@@ -1,20 +1,16 @@
 .navigation{
-    opacity: 0;
-    visibility: hidden;
-    width: 0;
-    height: 0;
+    position: fixed;
+    top: 9%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    // &__bg{
+ 
+    // }
 
     @include respond(tab-port){
-        // opacity: 1;
-        // visibility: visible;
-        position: fixed;
-        top: 10%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background:rgba(black,.5);
-        z-index: 200;
-
+       
         &__checkbox{display: none;}
 
         &__button{
@@ -50,22 +46,26 @@
 
     
         &__background{
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
             background-color:$White;
             position: absolute;
             top: 2%;
             left: 50%;
             transform: translateX(-50%);
             width: 90%;
-            height: auto;
+            height: 0;
             padding: 2rem 0 ;
             border-radius:5px;
             box-shadow: 0 1rem 2rem rgba(black,.2);
             text-align: center;
+            transition: all 1s;
+            display: inline-block;
 
         }
     
         &__nav{
-            text-align: center;
 
             &__list{
                 position: relative;
@@ -77,6 +77,8 @@
             }
     
             &__item{
+                text-align: center;
+                margin-left: 5rem;
                 &:not(:last-child){
                     margin-bottom: 1.5rem;
                 }
@@ -90,5 +92,30 @@
                 }
             }
         }
+    }
+
+
+      //Functionality
+    //   &__checkbox:checked ~&__bg{
+    //       opacity: 1;
+    //   }
+
+    &__checkbox:checked ~ &__background{
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+
+    }
+
+    &__checkbox:checked ~ &__button &__icon{
+        background-color:transparent;
+    }
+    &__checkbox:checked ~ &__button &__icon::after{
+        top:0;
+        transform: rotate(135deg);
+    }
+    &__checkbox:checked ~ &__button &__icon::before{
+        top:0;
+        transform: rotate(-135deg);
     }
 }
