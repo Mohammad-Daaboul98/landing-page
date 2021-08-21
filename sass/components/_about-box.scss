@@ -5,6 +5,11 @@
     &__heading{
         text-align: left;
         margin-bottom: 1.5rem;
+
+        @include respond(tab-port){
+            text-align:center ;
+        }
+
     }
     &__text{
         text-align: left;
@@ -12,6 +17,9 @@
         font-size: 1.3rem;
         font-weight:400;
         line-height: 2rem;
+        @include respond(tab-port){
+            text-align: center;
+        }
     }
 
 
@@ -20,5 +28,10 @@
         top: 0;
         left: -9rem;
         margin-bottom: 3rem;
+        
+        @include respond(tab-port){
+            left: 0;
+            text-align:center ;
+        }
     }
 }

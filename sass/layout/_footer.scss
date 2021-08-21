@@ -4,15 +4,27 @@
     width: 100%;
     padding-bottom: 5rem;
 
+    @include respond(tab-port){
+        text-align: center;
+    }
+
 
     &__logo{
         text-align: center;
         margin-top: 5rem ;
         margin-bottom: 7rem;
+
+        @include respond(tab-port){
+            margin-bottom: 3rem;
+        }
     }
 
     &__icon-box{
         text-align: center;
+
+        @include respond(tab-port){
+            margin-bottom: -5rem;
+            }
     }
 
     &__icon  {
@@ -25,7 +37,10 @@
     &__list{
             margin-top: 5rem;
             list-style: none;
-            // margin-right: 20rem !important;
+
+            @include respond(tab-port){
+                margin-bottom: -6rem;
+                }
     }
 
     &__item{
@@ -38,7 +53,7 @@
         &:visited,
         &:link{
             text-decoration: none;
-            color: $Very-Light-Gray;
+            color: $Light-Grayish-Blue;
             font-size: 1.7rem;
             font-weight: 300;
             margin-bottom: 5rem;
@@ -54,12 +69,21 @@
         text-align: right;
         margin-top: 5rem;
         margin-bottom: 3rem;
+
+        @include respond(tab-port){
+         text-align: center;
+         margin-top: 8rem;
+        }
     }
 
     &__text{
         color:$Grayish-Blue;
-        float: right;
+        text-align: right;
         font-size: 1.8rem;
         font-weight: 300;
+
+        @include respond(tab-port){
+           text-align: center;
+        }
     }
 }

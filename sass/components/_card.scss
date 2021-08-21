@@ -6,6 +6,10 @@
     overflow: hidden;
     box-shadow:  0 1.5rem 2rem rgba(black, 0.1);
     transition: all .3s;
+
+    @include respond(tab-port){
+        width: 100%;
+    }
     
     &:not(:last-child){
         margin-right:10rem ;
