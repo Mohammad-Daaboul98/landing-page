@@ -1,9 +1,12 @@
 .navigation{
-
-
+     opacity: 0;
+     visibility: hidden;
+     display: none;
 
     @include respond(tab-port){
-
+        opacity: 1;
+        visibility: visible;
+        display: unset;
         position: fixed;
         top: 9%;
         left: 0;
