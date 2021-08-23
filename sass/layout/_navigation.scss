@@ -53,17 +53,17 @@
             visibility: hidden;
             overflow: hidden;
             background-color:$White;
-            position: absolute;
+            position: relative;
             top: 2%;
             left: 50%;
             transform: translateX(-50%);
-            width: 90%;
+            width: 80%;
             height: 0;
             padding: 2rem 0 ;
-            border-radius:5px;
+            border-radius:3px;
             box-shadow: 0 1rem 2rem rgba(black,.2);
             text-align: center;
-            transition: all 1s;
+            transition: all .5s;
             display: inline-block;
 
         }
@@ -71,19 +71,17 @@
         &__nav{
 
             &__list{
-                position: relative;
-                top: 0;
-                right: 5%;
+               @include center;
                 list-style: none;
-                font-weight: 700;
-                font-size: 1.6rem;
+                font-weight: 400;
+                font-size: 2.5rem;
             }
     
             &__item{
                 text-align: center;
-                margin-left: 5rem;
+                // margin-left: 5rem;
                 &:not(:last-child){
-                    margin-bottom: 1.5rem;
+                    margin-bottom: 2.5rem;
                 }
             }
     
@@ -106,7 +104,7 @@
     &__checkbox:checked ~ &__background{
         opacity: 1;
         visibility: visible;
-        height: auto;
+        height: 40rem;
 
     }
 
