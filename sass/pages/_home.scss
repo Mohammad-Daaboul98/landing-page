@@ -11,8 +11,9 @@
     }
   
     &__left-side{
-        margin-top: 8rem;
-        margin-left: 15rem;
+       position:relative;
+       top: 20rem;
+       left: 18rem;
         width: 75%;
 
         @include respond(tab-land){
@@ -27,8 +28,8 @@
         top: -19rem;
         right:-4rem ;
         background-image: url('../img/bg-intro-desktop.svg');
-        background-size: cover;
-        height: 100vh;
+        width: 75rem;
+        height: 80rem;
         z-index: 10;
 
         @include respond(tab-land){
@@ -42,8 +43,8 @@
 
     &__img{
         position: absolute;
-        top:10em;
-        right: -10rem;
+        top:17em;
+        right: -5rem;
         max-height: 100%;
         max-width: 100%;
 
@@ -122,8 +123,8 @@
 
 .section-about{
     position: relative;
-    top: -27.7rem;
-    margin-bottom: -27.7rem;
+    top: -19rem;
+    margin-bottom: -19rem;
     width: 100%;
     padding: 10rem 18rem 20rem 18rem ;
     background-color:$Light-Grayish-Blue;
