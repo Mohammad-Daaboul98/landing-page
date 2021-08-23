@@ -418,15 +418,17 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         list-style: none;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 2.5rem; }
       .navigation__nav__item {
         text-align: center; }
         .navigation__nav__item:not(:last-child) {
-          margin-bottom: 2.5rem; }
+          margin-bottom: 4rem; }
       .navigation__nav__link:visited, .navigation__nav__link:link {
         color: #2d314d;
-        text-decoration: none; } }
+        text-decoration: none; }
+      .navigation__nav__link:hover {
+        border-bottom: 2px solid #31d35c; } }
   .navigation__checkbox:checked ~ .navigation__background {
     opacity: 1;
     visibility: visible;
