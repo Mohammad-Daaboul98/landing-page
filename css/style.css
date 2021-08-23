@@ -240,7 +240,8 @@ body {
   width: 100%;
   padding: 4rem 0;
   background-color: white;
-  z-index: 100; }
+  z-index: 100;
+  transition: background-color .3s ease-out; }
   .header--active {
     background-color: rgba(255, 255, 255, 0.5); }
   .header__logo-box {
@@ -409,7 +410,7 @@ body {
         border-radius: 3px;
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
         text-align: center;
-        transition: all .5s;
+        transition: all .5s ease-out;
         display: inline-block; }
       .navigation__nav__list {
         position: absolute;
