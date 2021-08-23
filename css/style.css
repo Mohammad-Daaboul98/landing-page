@@ -241,6 +241,8 @@ body {
   padding: 4rem 0;
   background-color: white;
   z-index: 100; }
+  .header--active {
+    background-color: rgba(255, 255, 255, 0.5); }
   .header__logo-box {
     position: absolute;
     top: 50%;
@@ -376,7 +378,7 @@ body {
         right: 3rem; }
       .navigation__icon {
         position: relative;
-        top: 2rem;
+        top: 2.5rem;
         margin-left: 3rem; }
         .navigation__icon, .navigation__icon::after, .navigation__icon::before {
           width: 4rem;
